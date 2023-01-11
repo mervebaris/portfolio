@@ -11,7 +11,7 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
-      <div className="basis-3/5 z-10 mt-16 md:mt-44 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 mt-16 md:mt-20 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -32,7 +32,7 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
 
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
+      <div className="z-30 basis-2/5 mt-12 md:mt-20">
         <motion.div
           initial="hidden"
           whileInView="visible"

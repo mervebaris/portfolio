@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="pt-32 pb-16">
+    <section id="testimonials" className=" pt-15 pb-10">
       
       <motion.div
-        className="md:w-1/3 text-center md:text-left"
+        className="md:w-1/3 mx-auto text-center md:text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -16,7 +16,7 @@ const Testimonials = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-playfair font-semibold text-4xl mb-5 text-red ">
           TESTIMONIALS
         </p>
         <LineGradient width="mx-auto w-2/5" />
