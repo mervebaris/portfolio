@@ -6,8 +6,8 @@ import Skills from "../assets/skills-image.png";
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="w-5/6 m-auto">
-      <div className="md:flex md:justify-between md:gap-16 mt-15 py-8">
+    <section id="skills" className="w-5/6 m-auto overflow-hidden" style={{marginTop: "170px"}}>
+      <div className="md:flex md:justify-between md:gap-16  py-8" >
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -31,7 +31,7 @@ const MySkills = () => {
         <div className="mt-16 md:mt-0">
           {isAboveLarge ? (
             <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
+              className="relative z-0 ml-10 before:absolute before:-top-5 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
               <img alt="skills" className="z-10" src={Skills} />

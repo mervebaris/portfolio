@@ -27,9 +27,7 @@ export default function Slider() {
         fillParent={false}
         bullets={false}
         mobileTouch={true}
-
-
-        animation="cubeAnimation"
+        
       >
         <div>
         <div className="w-5/6 mx-auto md:h-full">
@@ -85,7 +83,7 @@ export default function Slider() {
       </div>
         </div>
         <div>
-        <div className="w-4/6  mx-auto md:h-full  ">
+        <div className="w-4/6 mx-auto md:h-full  ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"

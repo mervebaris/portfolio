@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact ">
+    <section id="contact" className="contact overflow-hidden">
  
       <motion.div
         initial="hidden"

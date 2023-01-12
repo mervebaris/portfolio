@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className=" pt-15 pb-10">
+    <section id="testimonials" className=" pt-15 pb-10" style={{marginTop: "150px"}}>
       
       <motion.div
         className="md:w-1/3 mx-auto text-center md:text-center"

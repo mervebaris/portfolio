@@ -3,6 +3,7 @@ import Navbar from "./scenes/Navbar";
 import Footer from "./scenes/Footer";
 import Slider from "./scenes/Slider";
 
+
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -19,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="h-">
+    <div>
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -28,6 +29,7 @@ function App() {
       <div>
         <Slider />
       </div>
+    
       <div>
         <Footer />
       </div>

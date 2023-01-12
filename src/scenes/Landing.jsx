@@ -9,9 +9,9 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-32 md:h-full"
+      className="md:flex md:justify-between md:items-center gap-32 " style={{marginTop: "140px"}}
     >
-      <div className="basis-3/5 z-10 mt-16 md:mt-20 flex justify-center md:order-2">
+      <div className="basis-3/5 z-10 mt-16 flex justify-center md:order-2">
         {isAboveLarge ? (
           <div
             className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
@@ -26,13 +26,13 @@ const Landing = ({ setSelectedPage }) => {
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 max-w-[400px] md:max-w-[600px]"
             src={Profile}
           />
         )}
       </div>
 
-      <div className="z-30 basis-2/5 mt-12 md:mt-20">
+      <div className="z-30 basis-2/5 mt-12 md:mt-20 p-10">
         <motion.div
           initial="hidden"
           whileInView="visible"

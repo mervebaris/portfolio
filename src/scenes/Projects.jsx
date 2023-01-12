@@ -21,7 +21,7 @@ const projectVariant = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-10 pb-48">
+    <section id="projects" className="overflow-hidden " >
       <motion.div
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
