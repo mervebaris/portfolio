@@ -7,7 +7,6 @@ const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="w-5/6 m-auto">
-      
       <div className="md:flex md:justify-between md:gap-16 mt-15 py-8">
         <motion.div
           className="md:w-1/3"
@@ -25,8 +24,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            Html, Css, Javascript, React, TypeScript, Bootstrap, Tailwind, Sass
           </p>
         </motion.div>
 
@@ -36,11 +34,7 @@ const MySkills = () => {
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
-              <img
-                alt="skills"
-                className="z-10"
-                src={Skills}
-              />
+              <img alt="skills" className="z-10" src={Skills} />
             </div>
           ) : (
             <img alt="skills" className="z-10" src={Skills} />
@@ -48,9 +42,7 @@ const MySkills = () => {
         </div>
       </div>
 
-   
       <div className="md:flex md:justify-between mt-16 gap-32">
-       
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -65,20 +57,19 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Experience
+              <p className="font-playfair font-semibold text-2xl mt-3">
+                Hypertext Markup Language
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+            HTML stands for HyperText Markup Language. It is a standard markup
+            language for web page creation. It allows the creation and structure
+            of sections, paragraphs, and links using HTML elements such as tags and attributes.
           </p>
         </motion.div>
 
-    
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -93,20 +84,19 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+              <p className="font-playfair font-semibold text-2xl mt-3">
+                Cascading Style Sheets
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            CSS allows you to create great-looking web pages, but how does it
+            work under the hood? This article explains what CSS is with a simple
+            syntax example and also covers some key terms about the language.
           </p>
         </motion.div>
-      
+
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -121,17 +111,15 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
+              <p className="font-playfair font-semibold text-2xl mt-3">
+                Javascript
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+            JavaScript is a text-based programming language that allows you to
+            create interactive elements on your web page.
           </p>
         </motion.div>
       </div>
