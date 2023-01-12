@@ -1,7 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import Contac from "../assets/contact-image.jpeg";
+import Contac from "../assets/cn3.jpg";
 
 
 const Contact = () => {
@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact ">
  
       <motion.div
         initial="hidden"
@@ -34,17 +34,17 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair font-semibold text-4xl mt-56 ">
             <span className="text-yellow">CONTACT ME</span> TO GET STARTED
           </p>
-          <div className="flex md:justify-end my-5">
+          <div className="flex md:justify-end">
             <LineGradient width="w-1/2" />
           </div>
         </div>
       </motion.div>
 
     
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-between gap-16 mt-5 ">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -56,7 +56,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src={Contac} alt="contact" />
+          <img src={Contac} alt="contact" className="w-full h-[60%] object-cover" />
         </motion.div>
 
         <motion.div
@@ -68,7 +68,7 @@ const Contact = () => {
             hidden: { opacity: 0, y: 50 },
             visible: { opacity: 1, y: 0 },
           }}
-          className="basis-1/2 mt-10 md:mt-0"
+          className="basis-1/2 mt-10 md:mt-0   "
         >
           <form
             target="_blank"
@@ -77,7 +77,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3 "
               type="text"
               placeholder="NAME"
               {...register("name", {

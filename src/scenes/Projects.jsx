@@ -1,5 +1,9 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import Proje1 from "../assets/project-1.jpeg";
+import Proje4 from "../assets/project-4.jpeg";
+import Proje5 from "../assets/project-5.jpeg";
+import Proje7 from "../assets/project-7.jpeg";
 
 const container = {
   hidden: {},
@@ -18,7 +22,6 @@ const projectVariant = {
 const Project = ({ title }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
@@ -29,15 +32,13 @@ const Project = ({ title }) => {
           porttitor accumsan tincidunt.
         </p>
       </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
   );
 };
 
 const Projects = () => {
   return (
-    <section id="projects" className="pt-48 pb-48">
-  
+    <section id="projects" className="pt-10 pb-48">
       <motion.div
         className="md:w-2/5 mx-auto text-center"
         initial="hidden"
@@ -50,52 +51,55 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-playfair font-semibold text-4xl">
+          <p className="font-playfair font-semibold text-4xl mt-32">
             <span className="text-red">PRO</span>JECTS
           </p>
-          <div className="flex justify-center mt-5">
+          <div className="flex justify-center ">
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
+        <p className="mt-10 mb-20">
           Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
           fames odio in at. At magna ornare dictum lectus. Purus massa morbi
           purus nec eget eleifend ut elit.
         </p>
       </motion.div>
 
-
-      <div className="flex justify-center">
+      <div className="mx-auto w-full h-full justify-items-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-2"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-       
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project title="project-1" />
-          <Project title="project-2" />
+          <div className="w-full h-full grid gap-x-4 gap-y-2 grid-cols-3 justify-items-center mx-96 my-3 ">
+            <div
+              className="flex justify-center text-center items-center p-10 bg-red
+              max-w-[300px] max-h-[300px] text-2xl font-playfair font-semibold"
+            >
+              BEAUTIFUL USER INTERFACES
+            </div>
 
-        
-          <Project title="project-3" />
-          <Project title="project-4" />
-          <Project title="project-5" />
-
-       
-          <Project title="project-6" />
-          <Project title="project-7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
+            <div>
+              <img src={Proje1} alt="proje" className="w-full h-full" />
+            </div>
+            <div>
+              <img src={Proje4} alt="proje" className="w-full h-full" />
+            </div>
+            <div>
+              <img src={Proje5} alt="proje" className="w-full h-full" />
+            </div>
+            <div>
+              {" "}
+              <img src={Proje7} alt="proje" className="w-full h-full" />
+            </div>
+            <div
+              className="flex justify-center text-center items-center p-10 bg-blue
+              max-w-[300px] max-h-[300px] text-2xl font-playfair font-semibold"
+            >
+              SMOOTH USER EXPERIENCE
+            </div>
           </div>
         </motion.div>
       </div>

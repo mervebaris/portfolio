@@ -1,10 +1,9 @@
-import {useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "./scenes/Navbar";
 import Footer from "./scenes/Footer";
 import Slider from "./scenes/Slider";
 
 function App() {
-  
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   useEffect(() => {
@@ -20,14 +19,18 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="h-">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <Slider />
-      <Footer />
+      <div>
+        <Slider />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
