@@ -55,7 +55,7 @@ const Landing = ({ setSelectedPage }) => {
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
             I take my work seriously and see every job through to the and. I
-            have a greate desire to learn new thinhs and develop in the field of
+            have a greate desire to learn new things and develop in the field of
             desing. Creativity and create thinking are the components that help
             me to successfully complete projects.
           </p>
