@@ -19,6 +19,26 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
+const Project = ({ title }) => {
+  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+  const projectTitle = title.split(" ").join("-").toLowerCase();
+
+  return (
+    <motion.div variants={projectVariant} className="relative">
+      <div className={overlayStyles}>
+        <p className="text-2xl font-playfair">{title}</p>
+        <p className="mt-7">
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
+          porttitor accumsan tincidunt.
+        </p>
+      </div>
+     
+    </motion.div>
+  );
+};
+
+
 const Projects = () => {
   return (
     <section id="projects" className="overflow-hidden " >
@@ -41,13 +61,13 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-20">
+        <p className="mt-10 mb-20 mx-auto w-2/5 ">
         I have experience in designing e-commerce, corporate websites, and landing pages.
 
         </p>
       </motion.div>
 
-      <div className="mx-auto w-full h-full justify-items-center">
+      <div className="mx-auto w-full h-full justify-items-center ">
         <motion.div
           className="sm:grid sm:grid-cols-2"
           variants={container}
@@ -63,7 +83,7 @@ const Projects = () => {
               BEAUTIFUL USER INTERFACES
             </div>
 
-            <div>
+            <div >
               <img src={Proje1} alt="proje" className="w-full h-full" />
             </div>
             <div>
